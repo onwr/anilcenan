@@ -166,9 +166,11 @@ const BooksComponent = () => {
       }));
       setChapters(updatedChapters);
 
+      alert("Bölüm başarıyla eklendi!");
       setNewChapter({
-        title: "",
-        content: "",
+        name: "",
+        estimatedTime: "",
+        icerik: "",
       });
     } catch (error) {
       console.error("Bölüm eklenirken hata oluştu:", error);
@@ -217,6 +219,7 @@ const BooksComponent = () => {
         )
       );
       setEditingChapter(null);
+      alert("Düzenleme kaydedildi!");
     } catch (error) {
       console.error("Bölüm güncellenirken hata oluştu:", error);
     }

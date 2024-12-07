@@ -95,7 +95,7 @@ const Panel = () => {
   }
 
   return (
-    <div className="flex h-screen">
+    <div className="flex">
       <Sidebar screen={setScreen} value={screen} />
       <div className="bg-neutral-50/50 shadow-inner w-full flex items-center justify-center">
         {screen === 0 && <Hakkimda />}
